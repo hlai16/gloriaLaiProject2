@@ -1,0 +1,144 @@
+
+.hamburger {
+    display: none;
+}
+
+// Home Header
+
+.headerHome {
+    @include headerHero;
+    background-image: url(../assets/home-header.jpg);
+}
+
+.brand {
+    display: flex;
+}
+
+.headerImg {
+    position: relative;
+    width: 50%;
+}
+
+.headerImg img {
+    position: absolute;
+    width: 110%;
+    height: 130%;
+}
+
+.headerHome h1 {
+    @include h1Font($color2);
+    align-self: flex-end;
+    margin-top: 18%;
+    width: 45%;
+}
+
+// Blog Header
+
+.headerBlog {
+    @include headerHero;
+    background-image: url(../assets/blog-header.jpg);
+    // z-index: 1;
+}
+
+.headerBlog h1 {
+    @include h1Font;
+}
+
+
+// Contact Header
+
+.headerContact {
+    @include headerHero;
+    background-image: url(../assets/contact-header.jpg);
+}
+
+.headerContact h1 {
+    @include h1Font;
+}
+
+
+// Media Query
+
+@media(max-width: 900px){
+    // Home Header
+    .headerImg {
+        display: none;
+    }
+}
+
+// iPad, ebook Portrait
+
+@media (orientation: portrait) and (max-width: 900px){
+    .headerHome,
+    .headerBlog,
+    .headerContact {
+        @include headerHero(60vh)
+    }
+    
+    // Other Headers
+    .otherBrand {
+        position: relative;
+        bottom: calc(-30% - 5rem);
+    }
+}
+
+// Smartphone Portrait
+
+@media (orientation: portrait) and (max-width: 668px){
+    .headerHome,
+    .headerBlog,
+    .headerContact {
+        @include headerHero(80vh)
+    }
+
+    .headerHome h1,
+    .headerBlog h1,
+    .headerContact h1{
+        @include h1FontMQPS;
+    } 
+        
+    // Other Headers
+    .otherBrand {
+        position: relative;
+        bottom: calc(-30% - 5rem);
+    }
+}
+
+// ebook Landscape
+
+@media (orientation: landscape) and (max-width: 1280px){
+    header {
+        height: 80vh;
+    }
+    
+    .headerHome h1,
+    .headerBlog h1,
+    .headerContact h1{
+        @include h1FontMQLE;
+    } 
+
+    .otherBrand {
+        position: relative;
+        bottom: calc(-30% + 2rem);
+    }
+}
+
+// Smartphone Landscape
+
+@media (orientation: landscape) and (max-width: 1000px){
+    header {
+        height: 100vh;
+    }
+
+    .headerHome h1,
+    .headerBlog h1,
+    .headerContact h1{
+        @include h1FontMQLS;
+    } 
+    .otherBrand {
+        position: relative;
+        bottom: calc(-30% + 1rem);
+    }
+}
+
+

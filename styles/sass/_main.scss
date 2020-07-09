@@ -1,0 +1,140 @@
+
+h2 {
+    @include h2Font;
+}
+
+p {
+    @include pFont;
+}
+
+// HOME MAIN
+
+.mainGrid {
+    background-color: $color1;
+    padding: 5%;
+    display: grid;
+}
+
+.mainText {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.mainText1,
+.mainText2,
+.mainText3,
+.mainText4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.mainText1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.mainText2 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.mainText3 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.mainText4 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.yellowCircle {
+    width: 12.75%;
+    height: 25%;
+    border-radius: 50%;
+    background-color: $color2;
+    padding: 3%;
+    font-size: 200%;
+    text-align: center;
+    margin: 5% 5% 0 0;
+}
+
+// Home Main Media Query
+
+@media (max-width: 900px){
+    .mainGrid{
+        display: block;
+    }
+}
+
+// Home Main Ipad landscape
+ @media (orientation: landscape) and (max-width: 1100px){
+     .mainHome {
+         font-size: 85%;
+     }
+     .yellowCircle {
+         height: 20%;
+     }
+ }
+
+ //Home Main Smartphone Portrait
+ @media (orientation: portrait) and (max-width: 600px){
+    .mainHome {
+        font-size: 65%;
+    }
+ }
+
+
+ // BLOG MAIN
+ .mainBlog {
+     width: 75%;
+     border-left: 5px solid $color2;
+     border-bottom: 5px solid $color2;
+     padding: 0;
+     margin: 0;
+ }
+
+ .main1 {
+     width: 105%;
+     background-color: $color2;
+ }
+
+ .main1 img{
+     width: 109%;
+     position: relative;
+     top: -.75rem;
+     right: -1rem;
+ }
+ .main2 {
+     padding: 10%;
+ }
+
+ //BLOG MAIN in media query
+ 
+ @media (max-width: 900px){
+     .mainBlog{
+         width: 95%;
+         border: 5px solid $color2;
+         margin: 0 auto;
+         background-color: $color6;
+         border-bottom-right-radius: 25%;
+     }
+     .main1 {
+        width: 100%;
+    }
+   
+    .main1 img{
+        width: 95%;
+    }
+    .main2{
+        border-bottom: 5px solid $color3;
+        border-right: 5px solid $color4;
+        border-bottom-right-radius: 35%;
+    }
+ }
+ @media (max-width: 600px){
+     .mainBlog{
+         font-size: 70%;
+     }
+     .main1 img{
+        width: 91%;
+    }
+ }

@@ -1,0 +1,44 @@
+// @import 'variables';
+.headerNav {
+    margin-left: 5%;
+}
+
+.headerNav ul {
+    display: flex;
+}
+
+.headerNav li {
+    list-style: none;
+    margin: 5% 2%;
+    text-align: center;
+}
+
+.headerNav a{
+    @include pFont($color4);
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 29px;
+    padding-bottom: 5%;
+}
+
+.headerNav a:hover,
+.headerNav a:active,
+.headerNav a:focus,
+.headerNav a:visited {
+    border-bottom: 3px solid $color2;
+}
+
+
+// Media Query
+@media (max-width: 900px){
+    .hamburger {
+        display: block;
+        text-align: right;
+        padding: 3%;
+        font-size: 250%;
+        color: $color4;
+    }
+    .headerNav {
+        display: none;
+    }
+}

@@ -1,0 +1,74 @@
+// Color scheme
+
+$color1: #eafafc;
+$color2: #fdd908;
+$color3: #0d457f;
+$color4: #fff;
+$color5: rgba(2, 0, 8, 0.719);
+$color6: #eaeef7;
+
+// Fonts
+
+$hFF: 'IM Fell English', serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+.button {
+    font-family: $hFF;
+}
+
+@mixin h1Font($h1Color:white){
+    font-size: 400%;
+    color: $h1Color;
+    padding-left: 9.5%;
+    text-shadow: 2px 2px 2px $color5;
+}
+
+@mixin h1FontMQPS { //Media Query Smartphone Portrait
+    font-size: 250%;
+    line-height: 200%;
+    max-width: 80%;
+}
+
+@mixin h1FontMQLS { //Media Query Smartphone Landscape
+    font-size: 250%;
+    line-height: 150%;
+    max-width: 100%;
+}
+@mixin h1FontMQLE { //Media Query Ebook Landscape
+    font-size: 320%;
+    line-height: 180%;
+    max-width: 90%;
+}
+
+@mixin h2Font {
+    font-size: 200%;
+    line-height: 80px;
+    color: $color3;
+}
+
+@mixin pFont($pColor: rgb(2, 2, 51)) {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: $pColor;
+}
+
+// .wrapper
+ @mixin wrapper {
+     max-width: 95%;
+     margin: 0 auto;
+ }
+
+//  headerHero mixin
+@mixin headerHero($heroHeight:100vh) {
+    background-color: $color3;
+    background-size: cover;
+    background-position: center;
+    height: $heroHeight;
+}
