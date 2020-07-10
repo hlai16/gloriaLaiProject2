@@ -138,3 +138,82 @@ p {
         width: 91%;
     }
  }
+
+ //CONTACT MAIN:
+ .form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+    background-color: $color3;
+    box-shadow: 10px 10px 0 $color2;
+ }
+ form{
+     display: grid;
+     grid-template-columns: 100%;
+     width: 100%;
+     padding: 5%;
+ }
+ .cFormNameEmail {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+
+    display: grid;
+    grid-template-columns: 46% 46%;
+    column-gap: 2.5%;
+ }
+ input[type='name']{
+     grid-row: 1/2;
+     grid-column: 1/2;
+ }
+ input[type='email']{
+     grid-row: 1/2;
+     grid-column: 2/3;
+ }
+ .cFormText {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+ }
+ button {
+    grid-row: 3/4;
+    grid-column: 1/-1;
+ }
+ .cFormNameEmail,
+ input,
+ textarea{
+     background-color: $color3;
+     border: hidden;
+ }
+ input,
+ textarea {
+     color: $color4;
+     padding: 2%;
+     margin: 5% 0;
+ }
+ .cFormNameEmail,
+ .cFormText,
+ button {
+     padding-left: 4%;
+ }
+ 
+ .cFormText {
+    width: 100%;
+ }
+ textarea{
+     width: 95%;
+     border: 2px solid $color2;
+ }
+ input {
+    border-bottom: 2px solid $color2;
+ }
+
+ button {
+     @include allButton;
+     width: 91.5%;
+     margin-left: 4%;
+ }
+
+ 
+
+ 
+ 

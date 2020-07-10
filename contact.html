@@ -8,67 +8,73 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="styles/styles.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/f01f73bcf4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="wrapper nonHomeBody">
-        <header>
-            <div class="headerContact">
-                <div class="hamburger">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <nav class="headerNav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="brand otherBrand">
-                    <h1>GET IN TOUCH</h1>
-                </div>
-            </div>
-        </header>
-        <main>
-            <div class="wrapper">
-                <form action="#">
-                    <div class="cFormName">
-                        <label for="name" class="sr-only">Name</label>
-                        <input type="name" placeholder="Name" required>
+    <div class="wrapper nonHomeBody contactBody">
+        <div class="contactGrid">
+
+
+            <header>
+                <div class="headerContact">
+                    <div class="hamburger">
+                        <i class="fas fa-bars"></i>
                     </div>
-                    <div class="cFormEmail">
-                        <label for="name" class="sr-only">Email</label>
-                        <input type="email" placeholder="Email address" required>
+                    <nav class="headerNav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="brand otherBrand">
+                        <h1>GET IN TOUCH</h1>
                     </div>
-                    <div class="cFormText">
-                        <label for="text" class="sr-only">Message</label>
-                        <textarea name="comment" id="feedback" cols="30" rows="10" placeholder="Message"></textarea>
-                    </div>
-                    <button class="button">SUBMIT</button>
-                </form>
-            </div>
-        </main>
-        <section class="contact">
-            <div class="wrapper">
-                <div class="socialMedia">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-whatsapp"></i>
                 </div>
-                <p class="email">info@email.com</p>
-                <p>123-456-7890</p>
-                <p>123 Queen Street West, Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V2D5</p>
-            </div>
-        </section>
+            </header>
+            <aside id="contact">
+                <div class="wrapper contact">
+                    <div class="socialMedia">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <p class="email">info@email.com</p>
+                    <p>123-456-7890</p>
+                    <p>123 Queen Street West, Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </div>
+            </aside>
+            <main>
+                <div class="wrapper form">
+                    <form action="#" class="wrapper">
+                        <div class="cFormNameEmail">
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="name" placeholder="Name" required>
+
+                            <label for="name" class="sr-only">Email</label>
+                            <input type="email" placeholder="Email address" required>
+                        </div>
+                        <div class="cFormText">
+                            <label for="text" class="sr-only">Message</label>
+                            <textarea name="comment" id="feedback" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <button class="button">SUBMIT</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <!--contactGrid-->
+
         <footer>
-            <div class="wrapper">
+            <div class="wrapper contactFooter">
                 <p>Created at Juno College. <a href="http://junocollege.com">junocollege.com</a></p>
                 <p>Copyright &copy; 2019 HackerYou</p>
             </div>

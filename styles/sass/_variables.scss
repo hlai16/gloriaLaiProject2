@@ -72,3 +72,9 @@ button,
     background-position: center;
     height: $heroHeight;
 }
+
+@mixin allButton($buttonBgc: $color2, $buttonC: $color3){
+    background-color: $buttonBgc;
+    color: $buttonC;
+    padding: 2.5% 5%;
+}
