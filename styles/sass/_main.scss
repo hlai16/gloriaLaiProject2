@@ -213,6 +213,18 @@ p {
      margin-left: 4%;
  }
 
+ //CONTACT LAYOUT: Screen length size less than 936px
+@media (max-width: 936px){
+    .form{
+        border-bottom-right-radius: 25%;
+        padding-bottom: 10%;
+    }
+    .cFormNameEmail{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
  
 
  
