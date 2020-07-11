@@ -19,6 +19,17 @@
     color: $color3;
 }
 
+.button {
+    @include allButton;
+    text-decoration: none;
+}
+
+.button:hover,
+.button:active,
+.button:focus{
+    @include allButtonHover;
+}
+
 // BLOG LAYOUT
 
 .blogBody {

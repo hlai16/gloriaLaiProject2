@@ -1,5 +1,106 @@
 
-// blog aside
+
+// HOME SECTIONS:
+//HOME About
+.aboutGrid {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+    background-color: $color3;
+}
+
+.about2 h3,
+.about3 h3{
+    @include h3Font;
+}
+
+.about2 p,
+.about3 p{
+    @include pFont($color4);
+}
+
+.about1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin-top: -5%;
+}
+.about2 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    padding: 5% 15% 10% 0;
+}
+.about3 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    text-align: right;
+    padding-left: 15%;
+}
+.about4 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin-bottom: -5%;
+}
+.about4 img,
+.about1 img{
+    width: 100%;
+}
+
+.about1 img{
+    box-shadow: 15px 15px 0 $color2;
+}
+.about4 img{
+    box-shadow: -15px 15px 0 $color2;
+}
+
+//HOME: Extra Vacation Days
+.eVD1{
+    background-color: $color1;
+    padding: 5% 5% 8% 5%;
+    text-align: center;
+}
+.eVD1 p {
+    padding-bottom: 3%;
+}
+.eVD1 .button{
+    padding: 2%;
+}
+.eVD2,
+.eVD2 img{
+    width: 100%;
+}
+
+//HOME: Win Trip
+.draw{
+    margin-top: -1%;
+}
+.drawFlex {
+    display: flex;
+    padding: 5%;
+    background-color: $color1;
+}
+
+.draw1{
+    width: 80%;
+    padding: 5%;
+}
+.draw1 img{
+    width: 100%;
+    box-shadow: -15px 15px 0 $color2;
+    margin: 5%;
+}
+.draw2{
+    padding: 2% 5% 5% 5%;
+}
+.draw2 p {
+    padding-bottom: 5%;
+}
+
+
+//HOME Gallery
+
+
+
+// BLOG Aside
 .sidebar1 {
     width: 100%;
 }
