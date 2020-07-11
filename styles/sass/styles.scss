@@ -110,7 +110,7 @@ aside {
     margin: 0;
     margin-top: -3%;
 }
-.form{
+.contactFormDiv{
     grid-row: 3/-1;
     grid-column: 2/-1;
     width: 65%;
@@ -125,7 +125,7 @@ aside {
 
 //CONTACT LAYOUT: in ebook Landscape
 @media (max-width: 1300px){
-    .form{
+    .contactFormDiv{
         margin-top: -3%;
     }
 }
@@ -140,7 +140,7 @@ aside {
         flex-direction: column;
         justify-content: space-between;
     }
-    .form,
+    .contactFormDiv,
     .contact,
     .headerContact{
         width: 100%;
