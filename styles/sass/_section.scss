@@ -206,12 +206,34 @@
 }
 
 
-
+//BLOG SECTIONS
 // BLOG Aside
 .sidebar1 {
     width: 100%;
+    background-color: $color3;
 }
 
 .sidebar1 img {
-    width: 100%;
+    width: 120%;
+    position: relative;
+    margin-top: -15%;
+    left: calc(30% - 10.25rem);
 }
+
+.aside{
+    background-color: $color3;
+    width: 92%;
+    margin-left: 20%;
+    padding: 5%;
+}
+
+.sidebar2 p,
+.sidebar3 li{
+    @include pFont($color4, 16px);
+}
+
+.aside h4 {
+    @include h4Font;
+}
+
+//BLOG Comments

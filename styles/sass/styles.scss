@@ -54,7 +54,8 @@ header {
 }
 
 aside {
-    width: 20%;
+    width: 30%;
+    margin-top: -55%;
 }
 
 .column2 {
@@ -145,5 +146,8 @@ aside {
     .headerContact{
         width: 100%;
         margin: 0;
+    }
+    .contactFormDiv {
+        margin-top: 15%;
     }
 }

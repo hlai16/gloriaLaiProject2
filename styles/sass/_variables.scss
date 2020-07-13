@@ -59,9 +59,16 @@ button,
     color: $color4;
 }
 
-@mixin pFont($pColor: rgb(2, 2, 51)) {
+@mixin h4Font {
+    font-size: 150%;
+    line-height: 40px;
+    letter-spacing: .8px;
+    color: $color2;
+}
+
+@mixin pFont($pColor: rgb(2, 2, 51), $pFS: 20px) {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: $pFS;
     letter-spacing: 1px;
     color: $pColor;
 }
