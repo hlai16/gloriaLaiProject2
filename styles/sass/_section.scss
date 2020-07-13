@@ -237,3 +237,90 @@
 }
 
 //BLOG Comments
+.blogComments {
+    padding: 10%;
+}
+
+.blogComments h3{
+    @include h3Font($color3);
+}
+
+.comment1,
+.comment2 {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    column-gap: 2%;
+    padding-left: 5%;
+    margin: 10% auto;
+}
+
+.commentImg{
+    grid-column: 1/2;
+}
+.commentText{
+    grid-column: 2/3;
+    margin-top: -5%;
+}
+
+//BLOG Form:
+.blogForm{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    padding: 5%;
+}
+.bFormNameEmail {
+   grid-row: 1/2;
+   grid-column: 1/-1;
+
+   display: grid;
+   grid-template-columns: 46% 46%;
+   column-gap: 2.5%;
+}
+.bFormName{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.bFormEmail{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+.bFormText {
+   grid-row: 2/3;
+   grid-column: 1/-1;
+}
+.blogButton {
+   grid-row: 3/4;
+   grid-column: 1/-1;
+}
+ .bFormNameEmail,
+ .bFormName,
+ .bFormEmail,
+ .bFormText textarea{
+     background-color: $color1;
+     border: hidden;
+ }
+ .bFormName,
+ .bFormEmail,
+ .bFormText textarea {
+     padding: 2%;
+     margin: 5% 0;
+ }
+.bFormText {
+    width: 100%;
+ }
+ .bFormText textarea{
+     width: 95%;
+     border: 2px solid $color2;
+ }
+ .bFormName,
+ .bFormEmail {
+    border-bottom: 2px solid $color2;
+ }
+
+ .blogButton {
+     @include allButton($color3, $color2);
+     width: 95%;
+     margin-right: 4%;
+     margin-top: 0;
+ }

@@ -52,11 +52,11 @@ button,
     color: $h2Color;
 }
 
-@mixin h3Font {
+@mixin h3Font($h3Color: $color4) {
     font-size: 180%;
     line-height: 58px;
     letter-spacing: 1.3px;
-    color: $color4;
+    color: $h3Color;
 }
 
 @mixin h4Font {
