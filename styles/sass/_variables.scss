@@ -52,8 +52,8 @@ button,
     color: $h2Color;
 }
 
-@mixin h3Font($h3Color: $color4) {
-    font-size: 180%;
+@mixin h3Font($h3FS: 180%, $h3Color: $color4) {
+    font-size: $h3FS;
     line-height: 58px;
     letter-spacing: 1.3px;
     color: $h3Color;

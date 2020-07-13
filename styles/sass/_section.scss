@@ -324,3 +324,71 @@
      margin-right: 4%;
      margin-top: 0;
  }
+
+ //BLOG SECTIONS IN Media Queries:
+ //BLOG SECTIONS in ebook landscape:
+ @media (max-width: 1280px){
+    .sidebar1 img {
+        width: 115%;
+        margin-top: -10%;
+        left: calc(30% - 7.25rem);
+    }   
+ }
+ //BLOG SECTIONS in screen size less than 900px
+ @media (max-width: 900px){
+    .bFormNameEmail{
+        display: flex;
+        flex-direction: column;
+    }
+    .bFormText textarea{
+        width: 100%;
+    }
+    .blogButton{
+        width: 100%;
+    }
+
+    .sidebar1 img {
+        width: 100%;
+        margin-top: 0;
+        left: 0;
+    }
+    
+    .aside{
+        margin-left: 5%;
+    }
+ }
+
+ //BLOG SECTIONS in screen size less than 600px
+ @media (max-width: 600px){
+    .blogComments {
+        padding: 0;
+    }
+    
+    .blogComments h3{
+        @include h3Font(120%, $color3);
+    }
+    
+    .comment1,
+    .comment2 {
+        grid-template-columns: 100%;
+        // column-gap: 2%;
+        padding-left: 0;
+        // margin: 10% auto;
+    }
+    .comment1.commentImg{
+        grid-row: 1/2;
+    }
+    .comment2.commentImg{
+        grid-row: 3/4;
+    }
+    .commentText{
+        grid-column: 1/2;
+        margin-top: 0;
+    }
+    .comment1 .commentText{
+        grid-row: 2/3;
+    }
+    .comment2 .commentText{
+        grid-row: 4/5;
+    }
+ }
