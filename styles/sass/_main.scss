@@ -108,6 +108,12 @@ p {
  }
 
  //BLOG MAIN in media query
+
+ @media (orientation: portrait) and (min-width: 901px){
+     .mainBlog{
+         background-color: $color6;
+     }
+ }
  
  @media (max-width: 900px){
      .mainBlog{

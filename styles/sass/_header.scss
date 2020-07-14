@@ -37,7 +37,6 @@
 .headerBlog {
     @include headerHero;
     background-image: url(../assets/blog-header.jpg);
-    // z-index: 1;
 }
 
 .headerBlog h1 {

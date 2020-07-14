@@ -371,9 +371,7 @@
     .comment1,
     .comment2 {
         grid-template-columns: 100%;
-        // column-gap: 2%;
         padding-left: 0;
-        // margin: 10% auto;
     }
     .comment1.commentImg{
         grid-row: 1/2;
@@ -390,5 +388,42 @@
     }
     .comment2 .commentText{
         grid-row: 4/5;
+    }
+ }
+
+
+ //CONTACT SECTION
+ .contact .socialMedia {
+     display: flex;
+     justify-content: space-between;
+     letter-spacing: 2rem;
+ }
+ .email,
+ .address {
+     font-size: 16px;
+     line-break: 25rem;
+     line-height: 30px;
+ }
+
+ //CONTACT SECTION in Media Queries
+ @media (max-width: 1300px){
+    .email,
+    .address {
+        font-size: 14px;
+        line-break: 25rem;
+        line-height: 20px;
+    }
+ }
+
+ @media (max-width: 900px){
+     .contact {
+         width: 90%;
+         text-align: center;
+         font-size: 20px;
+         padding-top: 20%;
+     }
+     .contact .socialMedia {
+        justify-content: center;
+        letter-spacing: 2rem;
     }
  }
